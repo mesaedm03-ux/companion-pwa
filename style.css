@@ -1,0 +1,13 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,"Segoe UI",Tahoma;background:#0f1020;color:#eef;color-scheme:dark}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:#171833;position:sticky;top:0}
+.brand{font-weight:700}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#7c5cff;margin-inline-end:8px}
+main{max-width:720px;margin:auto;padding:16px}
+.card{background:#171833;border:1px solid #2b2d55;border-radius:18px;padding:18px;margin-bottom:16px}
+input,select,button{width:100%;padding:12px;border-radius:12px;border:1px solid #34366a;background:#101126;color:#fff;margin:6px 0 14px;font-size:16px}
+button{background:#7c5cff;border:0;font-weight:700;cursor:pointer}button:active{transform:scale(.98)}
+.hint{color:#9aa;font-size:13px}
+#messages{height:52vh;overflow:auto;display:flex;flex-direction:column;gap:10px;padding:4px}
+.msg{max-width:82%;padding:10px 14px;border-radius:16px;line-height:1.5}
+.user{align-self:flex-start;background:#7c5cff}.ai{align-self:flex-end;background:#242650}
+.composer{display:flex;gap:8px}.composer input{margin:0}.composer button{width:auto;padding:12px 18px;margin:0}
+.tools{display:flex;gap:8px;margin-top:10px}.tools button{background:#242650}

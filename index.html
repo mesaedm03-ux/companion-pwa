@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>رفيقي AI</title>
+<link rel="manifest" href="manifest.json"/>
+<meta name="theme-color" content="#7c5cff"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot"></span> رفيقي AI</div>
+  <button id="installBtn" hidden>تثبيت التطبيق</button>
+</header>
+<main>
+  <section id="setup" class="card">
+    <h2>أنشئ رفيقك</h2>
+    <label>الاسم</label><input id="cName" value="لونا"/>
+    <label>الشخصية</label>
+    <select id="cPersona">
+      <option value="لطيفة وداعمة ومرحة">لطيفة وداعمة ومرحة</option>
+      <option value="هادئة وحنونة ومستمعة">هادئة وحنونة ومستمعة</option>
+      <option value="ذكية ومرحة وتتحدث بثقة">ذكية ومرحة وتتحدث بثقة</option>
+    </select>
+    <label>مفتاح OpenAI API</label>
+    <input id="apiKey" type="password" placeholder="sk-..."/>
+    <p class="hint">المفتاح يُحفظ في متصفحك فقط لهذا النموذج التجريبي. في النسخة الحقيقية ضعه في الخادم.</p>
+    <button id="startBtn">ابدأ المحادثة</button>
+  </section>
+  <section id="chat" class="card" hidden>
+    <div id="messages"></div>
+    <div class="composer">
+      <input id="msg" placeholder="اكتب رسالتك..."/>
+      <button id="sendBtn">إرسال</button>
+    </div>
+    <div class="tools">
+      <button id="imgBtn">توليد صورة</button>
+      <button id="clearBtn">مسح المحادثة</button>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body></html>
